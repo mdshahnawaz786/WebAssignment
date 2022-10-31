@@ -1,1 +1,5 @@
 /* start your css here */
+.main-container{
+  background-color:rgb(3,3,39);
+  display: flex;
+}

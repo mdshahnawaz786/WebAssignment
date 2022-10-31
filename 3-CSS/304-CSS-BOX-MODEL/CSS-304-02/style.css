@@ -1,1 +1,97 @@
-/* start your css here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 10px;
+    display: flex;
+  }
+  .main-container {
+    height: 550px;
+    width: 600px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+
+  .heading {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    width: 500px;
+    align-items: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .input {
+   border: none;
+   color: gray;
+  }
+  .head {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .input-div {
+    background-color: white;
+    border: 2px solid black;
+    width: 500px;
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-div1 {
+    background-color: white;
+    border: 2px solid black;
+    width: 504px;
+    padding: 20px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .block-div {
+    display: flex;
+    gap:50px;
+    height: 50px;
+    width: 504px;
+    position: relative;
+  }
+
+  .checkbox {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .para{
+    color: white;
+    font-style: italic;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: center;
+    margin-left: 188px;
+    margin-right: 233px;
+  }
+  
+  .button {
+    width: 166px;
+    height: 46px;
+    border: 3px solid white;
+    background-color: black;
+  }

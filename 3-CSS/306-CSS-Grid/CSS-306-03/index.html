@@ -6,7 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255,253,248);
+    }
+    .first{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: rgb(255,253,248);
+    }
+    .second{
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-one{
+        height: 65%;
+        width: 100%;
+        display: flex;
+    }
+    .sec-two{
+        height: 35%;
+        width: 100%;
+        display: flex;
+    }
+    .third{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        
+    }
+    .third-color{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(224,219,215);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+</style>
 <body>
-    <!-- start your code here -->
+    <div class="main">
+        <div class="first">
+            <div style="display: flex;">
+                <img style="height:22px;width: 10px;" src="Shine.png" alt="">
+                <button style="height:22px;background-color: rgb(45,40,34);border-radius: 4px;width: 100px;"><h4 style="color: white;">HOME</h4></button>
+
+            </div>
+            <button style="background-color: rgb(45,40,34);border-radius: 4px;width: 100px;"><h4  style="color: white;">ABOUT</h4></button>
+            <img style="height: 80%;" src="M.png" alt="">
+            <button style="background-color: rgb(45,40,34);border-radius: 4px;width: 100px;"><h4  style="color: white;">MENU</h4></button>
+            <button style="background-color: rgb(45,40,34);border-radius: 4px;width: 100px;"><h4  style="color: white;">CONTACT</h4></button>
+        </div>
+
+        <div class="second">
+            <div class="sec-one">
+                <div style="height: 100%;width: 45%;;display: flex;flex-direction: column;">
+                    <div style="height: 38%;width: 100%;display: flex;">
+                        <div style="height: 100%;width: 40%; border: 2px solid black;display: flex;">
+                            <img style="height: 100%;width: 100%;" src="1.png" alt="">
+                        </div>
+                        <div style="height: 100%;width: 60%; border: 2px solid black;display: flex;">
+                            <img style="height: 100%;width: 100%;" src="2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div style="height: 62%;width: 100%;display: flex;">
+                        <div style="height: 100%;width: 60%; border: 2px solid black;display: flex;">
+                            <img style="height: 100%;width: 100%;" src="5.png" alt="">
+                        </div>
+                        <div style="height: 100%;width: 40%; border: 2px solid black;display: flex;">
+                            <img style="height: 100%;width: 100%;" src="6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 100%;width: 55%;display: flex;">
+                    <div style="height: 100%;width: 45%; border: 2px solid black;display: flex;">
+                        <img style="height: 100%;width: 100%;" src="3.png" alt="">
+                    </div>
+                    <div style="height: 100%;width: 55%; border: 2px solid black;display: flex;">
+                        <img style="height: 100%;width: 100%;" src="4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec-two">
+                <div style="height: 100%;width: 32%; border: 2px solid black;display: flex;">
+                    <img style="height: 100%;width: 100%;" src="7.png" alt="">
+                </div>
+                <div style="height: 100%;width: 43%; border: 2px solid black;display: flex;">
+                    <img style="height: 100%;width: 100%;" src="8.png" alt="">
+                </div>
+                <div style="height: 100%;width: 25%; border: 2px solid black;display: flex;">
+                    <img style="height: 100%;width: 100%;" src="9.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="third">
+            <div class="third-color">
+                <div class="text" style="display: flex;gap: 20px;">
+                    <h6 style="color:rgb(91,86,82)">HOME</h6>
+                    <h6 style="color:rgb(91,86,82)">ABOUT</h6>
+                    <h6 style="color:rgb(91,86,82)">MENU</h6>
+                    <h6 style="color:rgb(91,86,82)">CONTACT</h6>
+                    <h6 style="color:rgb(91,86,82)">|</h6>
+                    <h6 style="color:rgb(91,86,82)">© MERCER TARVERN 2013</h6>
+                </div>
+                <div style="display: flex;">
+                    <h6 style="color:rgb(91,86,82)">SITE BY VERSETT</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

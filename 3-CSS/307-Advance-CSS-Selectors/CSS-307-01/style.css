@@ -1,1 +1,50 @@
 /* start your styling here  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main{
+    height: 400px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(27,26,40);
+}
+.button-cont{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.button{
+    height: 60px;
+    width: 25%;
+    background-color: rgb(101,38,143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.last-button{
+    height: 60px;
+    width: 15%;
+    background-color: rgb(101,38,143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}

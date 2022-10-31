@@ -1,1 +1,14 @@
 /* start your css here */
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+  }
+  .para1{
+    margin: 0;
+  }
+  .para2{
+    margin: 0;
+    color: gray;
+  }

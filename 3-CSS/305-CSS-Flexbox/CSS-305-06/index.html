@@ -6,7 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .first{
+        height: 10%;
+        width: 100%;
+        /* border: 5px solid black; */
+        display: flex;
+    }
+    .second{
+        height: 90%;
+        width: 100%;
+        border: 5px solid black;
+        display: flex;
+    }
+</style>
 <body>
-    <!-- start your code here -->
+    <div class="main">
+        <div class="first">
+            <div class="linkedin-logo" style="display: flex;">
+                <img src="linkedin logo.png" alt="">
+            </div>
+            <div class="head" style="display: flex; justify-content: space-between;">
+                <div style="display: flex;flex-direction: column;">
+                    <img src="discover.png" alt="">
+                    <h5>Discover</h5>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <img src="people.png" alt="">
+                    <h5>People</h5>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <img src="learning.png" alt="">
+                    <h5>Learning</h5>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <img src="job.png" alt="">
+                    <h5>Jobs</h5>
+                </div>
+                <div style="display: flex;justify-content: flex-end;align-items: flex-end;">
+                    <h3>Join now</h3>
+                <button style="height: 80%;width: 70%;border: 1px solid black;border-radius: 20px;">Sign in</button>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div style="display: flex; height: 100%; width: 50%; border: 1px solid black;flex-direction: column;">
+                <h1>Join the biggest</h1>
+                <h1>professional community</h1>
+                <input style="height: 10%;width: 50%;" placeholder="Email">
+                <input style="height: 10%;width: 50%;" placeholder="Password(8+ character)">
+            </div>
+            <div style="display: flex; height: 100%; width: 50%; border: 1px solid black;">
+                <img src="photo.png" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

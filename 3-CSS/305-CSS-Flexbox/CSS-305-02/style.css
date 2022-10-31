@@ -1,1 +1,31 @@
 /* start your styling here  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(38,84,123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(241,70,110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px rgb(219,26,71);
+}
+.button-container{
+    height:50px; 
+    width:350px;
+    display:flex;
+    justify-content:space-between;
+}
