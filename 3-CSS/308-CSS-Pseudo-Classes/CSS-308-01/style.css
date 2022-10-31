@@ -1,1 +1,100 @@
 /* start your styling here  */
+*{
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Arial;
+    cursor: pointer;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main{
+    height: 450px;
+    width: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.button{
+    height: 50px; 
+    width: 100%;
+    display: flex;
+    gap: 3px;"
+}
+.number{
+    height: 100%px; 
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center"
+}
+.green{
+    height: 100%px; 
+    width: 21%; 
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(23,189,23);
+}
+.green:hover{
+    background-color: rgb(23,189,23);
+    color: white
+}
+.blue{
+    height: 100%px; 
+    width: 13%; 
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.blue:hover{
+    background-color: blue;
+    color: white
+}
+.orange{
+    height: 100%px; 
+    width: 21%; 
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+}
+.orange:hover{
+    background-color: orange;
+    color: white
+}
+.red{
+    height: 100%px; 
+    width: 16%; 
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.red:hover{
+    background-color: red;
+    color: white
+}
+.gray{
+    height: 100%px; 
+    width: 16%; 
+    border: 2px solid rgb(184,178,178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184,178,178);"
+}
+.gray:hover{
+    background-color: rgb(184,178,178);
+    color: white
+}
