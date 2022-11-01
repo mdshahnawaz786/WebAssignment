@@ -4,9 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>308-03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 100vh;
+        width: 100vw;
+        /* overflow-y: auto; */
+    }
+    .first{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        position: sticky;
+        left: 0;
+        top: 0;
+        background-color: rgb(250,229,150);
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    .logo-cont{
+        display: flex;
+    }
+    .button-cont{
+        display: flex;
+        gap: 20px;
+    } 
+    .second{
+        height: 97%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .second-one{
+        height: 100%;
+        width: 70%;
+        display: flex;
+    }
+    .para-container{
+        height: 100%;
+        width: 60%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .second-two{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-icon{
+        display: flex; 
+        justify-content: center;
+        font-size: 30px;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .third{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        background-color: rgb(69,69,69);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .forth{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        background-color: rgb(23,62,67);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 <body>
-    <!-- start your code here -->
+    <div class="main">
+        <div class="first">
+            <div class="logo-cont">
+                <img style="height: 100%;width: 100%;" src="logo.png" alt="">
+            </div>
+            <div class="button-cont">
+                <button style="background-color: rgb(250,229,150);border: none;">Artists</button>
+                <button style="background-color: rgb(250,229,150);border: none;">Events</button>
+                <select style="background-color: rgb(250,229,150);width: 60px;border: none;">
+                    <option value="about">About</option>
+                    <option value="Properties">Properties</option>
+                    <option value="Blogs">Blogs</option>
+                </select>
+                <button style="background-color: rgb(250,229,150);border: none;">Book an Artist</button>
+                <button style="background-color: rgb(250,229,150);border: none;">Shops</button>
+            </div>
+        </div>
+    
+        <div class="second">
+            <div class="second-one">
+                <div class="para-container">
+                    <h3>Nikhil Chinapa</h3>
+                    <br>
+                    <p>To say that Nikhil Chinapa has donned many an avatar during his career, is like saying it snows in Alaska; a bit of an understatement. He morphs from DJ to VJ to MC to Music Promoter to Festival Director —some of his best known avatars — with amazing fluidity.</p>
+                    <br>
+                    <p>He studied Architecture and graduated with a Thesis in Hospital Design. A year later and for reasons that scientists are still trying to understand, Nikhil joined MTV. He said, “I think it’ll be fun.” For once, he was right.</p>
+                    <br>
+                    <p>At MTV, Nikhil has hosted almost every show the channel has aired. From MTV Select – MTV’s longest running show, (it aired continuously for 10 years) to being the host of Splitsvilla, a judge on Roadies as well as Rock On and now host of MTV Mashups.</p>
+                    <br>
+                    <p>Nikhil’s Mom still thinks he’s an idiot though and should get a real job.</p>
+                    <br>
+                    <p>As a popular VJ, Nikhil got to spend a lot of time around his first love, music. In 2001, a conversation between friends resulted in the launch of Submerge — India’s first, and now largest Indian Electronic Dance Music (EDM) company in India.</p>
+                    <br>
+                    <p>By now, Nikhil had begun to DJ professionally and plays, well… whatever he feels like. His sets are moody, varied, often erratic but usually fun. Most of his sets feature frantic foot-stomping and the random flailing of arms – sometimes by him. They also feature music – the kind that has a repetitive monotonous beat and is best enjoyed at dangerous decibel levels.</p>
+                    <br>
+                    <p>Nikhil was also the co-founder of Sunburn. He is now the Festival Curator and partner of Vh1 Supersonic, Goa’s brand new beach music festival.</p>
+                </div>
+                <div class="second-two">
+                    <img style="height: 250px;width: 325px;" src="photo.png" alt="">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-cloud"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <button style="border-radius: 5px;border: none;height: 35px; width: 200px;">VIEW OTHER ARTISTS</button>
+            <button  style="border-radius: 5px;border: none;height: 35px; width: 150px;">VIEW EVENTS</button>
+        </div>
+
+        <div class="forth">
+            <img style="height: 50px;width: 150px;" src="bottom-logo.png" alt="">
+            <br>
+            <p style="color: white;">39/40, Shop #2, Sethi Niwas, 4th Rd, Khar West , Opp Bharat Bank, Mumbai 400 052</p>
+            <br>
+            <p style="color: white;">P: +91-9923872635 |  E: info@submerge.in</p>
+        </div>
+    </div>
 </body>
 </html>
