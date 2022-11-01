@@ -1,1 +1,75 @@
-/* start your styling here  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.one{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.two{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.dropdown{
+height: 100%;
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+display: inline-block;
+}
+
+.dropbtn{
+height: 80%;
+width: 100%;
+background-color: rgb(244,81,30);
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+.dropdown-content{
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 300px;
+
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: rgb(244,81,30);
+}
