@@ -1,1 +1,198 @@
 /* start your styling here  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.div-1 {
+    height: 65px;
+    width: 100vw;
+    background-color: rgb(250,229,150);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.icon {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.button {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-2 {
+    height: 630px;
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-2-1 {
+    height: 100%;
+    width: 65%;
+    display: flex;
+}
+
+.one {
+    height: 100%;
+    width: 64%;
+    display:flex ;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    font-family:Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    color: rgb(69, 69, 69);
+}
+
+.name {
+    font-family: "Roboto Slab", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 39.2px;    
+    color: rgb(0, 0, 0)
+}
+
+.two {
+    height: 100%;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-3 {
+    height: 210px;
+    width: 100%;
+    background-color: rgb(69,69,69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.div-4 {
+    height: 205px;
+    width: 100%;
+    background-color: rgb(23,62,67);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.address {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    height: 85%;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(69,69,69);
+}
+
+.btn:hover {
+    border-top: 4px solid rgb(63, 176, 172);
+    color: rgb(63, 176, 172);
+    cursor: pointer;
+}
+
+.select {
+    width: 80px;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    color: rgb(76,75,72);
+    font-family:Roboto Slab,serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(69,69,69);
+    cursor: pointer;
+}
+
+.select:hover {
+    border-top: 4px solid rgb(63, 176, 172);
+    color: rgb(63, 176, 172);
+    cursor: pointer;
+}
+
+.select option:hover{
+    background-color: #029bd5;
+}
+
+.select > option {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #313131;
+    color: #fff;
+}
+
+.i:hover {
+    color:rgb(59, 89, 152);
+    cursor: pointer;
+}
+
+.btn-1 {
+    width: 238.08px;
+    height: 42.19px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2 {
+    width: 162.56px;
+    height: 42.19px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    color: rgb(107, 106, 106);
+}
+
+.btn-2:hover {
+    color: rgb(107, 106, 106);
+}
