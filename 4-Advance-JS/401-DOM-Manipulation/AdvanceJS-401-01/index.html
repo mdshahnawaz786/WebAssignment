@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS-401-01</title>
   </head>
+  <style>
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      height: 50%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+    }
+
+    .input-box {
+      border: 2px solid rgb(138,255,208);
+      border-radius: 5px;
+    }
+  </style>
   <body>
-    Start your code here
+    <div class="main">
+      <input type="text" class="input-box" />
+      <p class="para"></p>
+    </div>
+    
   </body>
+
+  <script>
+    const input = document.getElementsByClassName("input-box")[0];
+    const para = document.getElementsByClassName("para")[0];
+
+    input.addEventListener("keyup",()=> {
+      let text = input.value;
+      para.innerText = text;
+    })
+  </script>
 </html>
