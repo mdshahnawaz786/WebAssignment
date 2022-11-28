@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <script>
+        var arr =['1st','2nd','3rd','4th','5th','6th','7th','8th','9th','10th','11th','12th','13th','14th','15th','16th','17th']
+        var c =0;
+        for(let i=1; i<=17; i++){
+            if(i%2===0){
+                
+                    var ele = document.createElement('div');
+                    ele.innerText = `${arr[c++]} child`;
+                    ele.style.height = '25px';
+                    ele.style.width = '100px';
+                    ele.style.border = '1px solid black';
+                    ele.style.borderRadius = '4px';
+                    ele.style.textAlign = 'center';
+                    ele.style.backgroundColor = 'lime';
+                    ele.style.color = 'white';
+                    document.getElementsByClassName('main')[0].appendChild(ele);
+                
+            }
+            else if (i===1){
+                var ele = document.createElement('div');
+                    ele.innerText = `${arr[c++]} child`;
+                    ele.style.height = '25px';
+                    ele.style.width = '100px';
+                    ele.style.border = '1px solid black';
+                    ele.style.borderRadius = '4px';
+                    ele.style.textAlign = 'center';
+                    ele.style.backgroundColor = 'blue';
+                    ele.style.color = 'white';
+                    document.getElementsByClassName('main')[0].appendChild(ele);
+            }else if(i===9){
+                var ele = document.createElement('div');
+                    ele.innerText = `${arr[c++]} child`;
+                    ele.style.height = '25px';
+                    ele.style.width = '100px';
+                    ele.style.border = '1px solid black';
+                    ele.style.borderRadius = '4px';
+                    ele.style.textAlign = 'center';
+                    ele.style.backgroundColor = 'green';
+                    ele.style.color = 'white';
+                    document.getElementsByClassName('main')[0].appendChild(ele);
+            } else if(i === 17){
+                var ele = document.createElement('div');
+                    ele.innerText = `${arr[c++]} child`;
+                    ele.style.height = '25px';
+                    ele.style.width = '100px';
+                    ele.style.border = '1px solid black';
+                    ele.style.borderRadius = '4px';
+                    ele.style.textAlign = 'center';
+                    ele.style.backgroundColor = 'pink';
+                    ele.style.color = 'white';
+                    document.getElementsByClassName('main')[0].appendChild(ele);
+            }else{
+                var ele = document.createElement('div');
+                    ele.innerText = `${arr[c++]} child`;
+                    ele.style.height = '25px';
+                    ele.style.width = '100px';
+                    ele.style.border = '1px solid black';
+                    ele.style.borderRadius = '4px';
+                    ele.style.textAlign = 'center';
+                    
+                    ele.style.color = 'black';
+                    document.getElementsByClassName('main')[0].appendChild(ele);
+            }
+        }
+    </script>
+</body>
 </html>
