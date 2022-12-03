@@ -6,7 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imgContainer {
+      position: relative;
+      height: 70%;
+      width: 70%;
+    }
+
+    .iconContainer {
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      top: 50%;
+      display: flex;
+      justify-content: space-between; 
+      padding: 0 15px;
+    }
+
+    .image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .leftArrow {
+      font-size:50px;
+      color: white;
+      
+    }
+
+    .rightArrow {
+      font-size:50px;
+      color: white;
+    }
+  </style>
   <body>
-    Start your code here
+    <div class="imgContainer">
+      <img class="image" src="images1.jpg" alt="">
+
+      <div class="iconContainer" >
+        <i class="fa-solid fa-caret-left leftArrow"></i>
+        <i class="fa-solid fa-caret-right rightArrow"></i>
+      </div>
+    </div>
   </body>
+
+  <script>
+    const image = document.getElementsByClassName('image')[0];
+    const left = document.getElementsByClassName('leftArrow')[0];
+    const right = document.getElementsByClassName('rightArrow')[0];
+    
+    const imgArr = ['images1.jpg','images2.jpg','images3.jpg'];
+
+    let count = 0;
+
+    left.addEventListener('click', ()=>{
+      if(count === 0){
+        count = imgArr.length;
+      }
+      if(count > 0){
+        count--
+        image.setAttribute('src',imgArr[count]);
+      } 
+    });
+
+    right.addEventListener('click', ()=> {
+      count++;
+
+      if(count===imgArr.length){
+        count = 0;
+      }
+      if(count >= 0 && count < imgArr.length){
+        image.setAttribute('src',imgArr[count]);
+      }
+    });
+    </script>
 </html>
