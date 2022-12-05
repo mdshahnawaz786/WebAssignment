@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+      }
+      #main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      #head{
+        color: red;
+      }
+      #button{
+        height: 30px;
+        width: 100px;
+        cursor: pointer;
+      }
+     
+    </style>
   </head>
   <body>
-    Start your code here
+    <div id="main">
+      <h1 id="head">Geekster</h1>
+      <b>Click on button to add image element</b>
+      <button id="button">Click Here</button>
+    </div>
+
+    <script>
+      const main = document.getElementById("main");
+      const button = document.getElementById("button");
+
+      button.addEventListener("click",()=>{
+        const h3 = document.createElement("h3");
+        h3.innerText = "Image Element Added.";
+        h3.style.color = "red";
+        const image = document.createElement("img");
+        image.setAttribute("src","402.png");
+        image.style.height = "70px";
+        image.style.width = "250px";
+        main.append(h3);
+        main.append(image);
+      })
+    </script>
+
   </body>
 </html>
