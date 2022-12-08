@@ -4,9 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-403-01</title>
   </head>
-  <body>
-    Start your code here
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .first {
+      height: 15%;
+      font-size: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:rgb(106, 159, 123);
+      box-shadow: 2px 2px 2px 2px gray;
+      padding: 0 30px;
+    }
+
+    .second {
+      margin-left: 20px;
+      color:rgb(106, 159, 123);
+    }
+
+    .key_number_container {
+      height: 10%;
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 2px 2px gray;
+      border-radius: 4px;
+      color:rgb(106, 159, 123);
+      display: none;
+    }
+  </style>
+  <body class="main">
+    <div class="first">
+      <div class="key_container">Press Any Keybord Key</div>
+      <h4 class="second"></h4>
+    </div>
+      
+      <div class="key_number_container">
+        <h1 class="key_number"></h1>
+      </div>
   </body>
+  <script>
+    const body = document.getElementsByClassName("main")[0];
+    const keyContainer = document.getElementsByClassName("key_container")[0];
+    const keyNumberContainer = document.getElementsByClassName("key_number_container")[0];
+    const second = document.getElementsByClassName("second")[0];
+    const keyNumber = document.getElementsByClassName("key_number")[0];
+    
+    body.addEventListener("keydown",(e)=>{
+      keyContainer.innerText = `You pressed `;
+      second.innerText = e["key"];
+      keyNumberContainer.style.display = "flex";
+      keyNumber.innerText = e["keyCode"];
+    })
+  </script>
 </html>
