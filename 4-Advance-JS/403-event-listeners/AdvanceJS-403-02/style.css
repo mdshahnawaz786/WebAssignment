@@ -5,6 +5,7 @@
 body {
     text-align: center;
     background-color: rgb(40,49,73);
+    cursor: pointer;
   }
   
   h1 {
@@ -12,11 +13,8 @@ body {
     color: white;
     font-family: "Arvo", cursive;
     text-shadow: 3px 0 #DA0463;
-  
   }
-  
-
-  
+ 
   .w {
     background-image: url("./image/crash.png");
   }
@@ -49,12 +47,12 @@ body {
     margin-top: 100px;
   }
 
-  .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
-  }
-  
   .drum {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
     border: 10px solid #404B69;
     font-size: 80px;
     font-family: 'Arvo', cursive;
@@ -62,11 +60,6 @@ body {
     text-shadow: 3px 0 white;
     border-radius: 15px;
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin: 10px;
-    background-color: white;
   }
   
  
